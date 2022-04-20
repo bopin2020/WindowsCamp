@@ -21,3 +21,10 @@ bcdedit /debug on
 bcdedit /dbgsettings serial debugport:2 baudrate:115200
 ```
 
+
+### Windbg调试技巧
+http://www.pnpon.com/article/detail-104.html   资料
+
+不要直接打开文件,windbg会搜索所有模块 
+当配置了源文件路径后，可以通过.open命令打开源文件
+.open -a module!func
