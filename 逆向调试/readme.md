@@ -21,6 +21,15 @@ bcdedit /debug on
 bcdedit /dbgsettings serial debugport:2 baudrate:115200
 ```
 
+### win7 配置内核调试
+
+> bcdedit /bootdebug ON
+> bcdedit /debug ON
+> bcdedit /dbgsettings serial baudrate:115200 debugport:1
+> bcdedit /copy {current} /d DebugEntry
+> bcdedit /displayorder {current} {d3d5f290-f64b-11de-a86d-aba3805c5629}
+> bcdedit /debug {d3d5f290-f64b-11de-a86d-aba3805c5629} ON
+
 
 ### Windbg调试技巧
 http://www.pnpon.com/article/detail-104.html   资料
