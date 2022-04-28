@@ -1,3 +1,17 @@
+https://bbs.pediy.com/thread-272515.htm  x64dbg使用详解
+
+
+> Windbg查看一个函数内部调用了那些函数
+0:000> x user32!MessageBoxW
+00007ffb`82f3cab0 USER32!MessageBoxW (MessageBoxW)
+0:000> uf /c /D 00007ffb`82f3cab0
+USER32!MessageBoxW (00007ffb`82f3cab0)
+  USER32!MessageBoxW+0x49 (00007ffb`82f3caf9):
+    call to USER32!MessageBoxTimeoutW (00007ffb`82f3c8e0)
+    
+    
+
+
 ### 1. 禁用驱动签名保护
 
 > bcdedit.exe /set nointegritychecks on
