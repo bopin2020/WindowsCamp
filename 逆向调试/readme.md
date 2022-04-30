@@ -51,3 +51,11 @@ http://www.pnpon.com/article/detail-104.html   资料
 不要直接打开文件,windbg会搜索所有模块 
 当配置了源文件路径后，可以通过.open命令打开源文件
 .open -a module!func
+
+
+### 调试环境搭建
+https://www.cnblogs.com/bianchengnan/p/12527189.html
+建议使用 VirtualKd  非常方便
+
+
+
