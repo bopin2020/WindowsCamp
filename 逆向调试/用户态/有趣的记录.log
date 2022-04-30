@@ -1,0 +1,32 @@
+1. 调试DarkLoadLibrary 
+
+kernel32!LoadLibrary   加载事件 
+sxe ld:wow64log.dll
+栈回溯如下:
+
+0:000> kv
+ # Child-SP          RetAddr               : Args to Child                                                           : Call Site
+00 00000094`e8efeea8 00007ffb`84e4c8d5     : 000001cc`27634690 000001cc`2763bba0 000001cc`27634690 00000000`4004006a : ntdll!NtMapViewOfSection
+01 00000094`e8efeeb0 00007ffb`84e4ca6c     : 00000000`00000000 00000000`00000090 00000000`00000000 000001cc`27634690 : ntdll!LdrpMinimalMapModule+0x12d
+02 00000094`e8efef70 00007ffb`84e4d1dd     : 000001cc`27634690 000001cc`2763bba0 000001cc`00008020 000001cc`2763bba0 : ntdll!LdrpMapDllWithSectionHandle+0x18
+03 00000094`e8efefd0 00007ffb`84e4daf1     : 00000000`00000000 00000000`00000090 00000094`e8eff0e0 00000094`e8eff1a0 : ntdll!LdrpLoadKnownDll+0xe1
+04 00000094`e8eff030 00007ffb`84e3b99d     : 00000094`e8eff198 00000094`e8eff240 00000094`00000000 00000094`e8eff340 : ntdll!LdrpFindOrPrepareLoadingModule+0xad
+05 00000094`e8eff0a0 00007ffb`84e44c0c     : 00000094`e8eff1a0 00000094`e8eff340 cccccccc`00000020 cccccccc`cccccc00 : ntdll!LdrpLoadDllInternal+0x185
+06 00000094`e8eff140 00007ffb`84e3ae06     : 00000000`00000000 00000000`00000001 cccccccc`cccccccc cccccccc`cccccccc : ntdll!LdrpLoadDll+0xb0
+07 00000094`e8eff300 00007ffb`823c3de2     : 00000000`00000000 00000000`00000000 00000000`00000000 00000000`00000000 : ntdll!LdrLoadDll+0x106
+08 00000094`e8eff3f0 00007ffb`8240b461     : cccccccc`00000000 00000000`00000000 00000000`00000000 00000000`00000000 : KERNELBASE!LoadLibraryExW+0x172
+09 00000094`e8eff460 00007ffb`82407edf     : 00007ff7`c30db56c 000001cc`2763aa00 cccccccc`cccccccc 00000094`e8eff628 : KERNELBASE!LoadLibraryExA+0x31
+0a 00000094`e8eff4a0 00007ff7`c305ad4f     : 00007ff7`c30db56c 00000000`00000000 cccccccc`cccc0000 00000001`8001e0e0 : KERNELBASE!LoadLibraryA+0x3f
+0b 00000094`e8eff4d0 00007ff7`c305954e     : 000001cc`2763a980 000001cc`276387ae cccccccc`cccccccc cccccccc`cccc0000 : DarkLoadLibrary!ResolveImports+0x17f [d:\code\github\c\abu\darkloadlibrary-master\darkloadlibrary\src\ldrutils.c @ 217] 
+0c 00000094`e8eff780 00007ff7`c305b5d3     : 00007ffb`00000001 000001cc`276387ae 00000000`00000000 cccccccc`00000000 : DarkLoadLibrary!DarkLoadLibrary+0x29e [d:\code\github\c\abu\darkloadlibrary-master\darkloadlibrary\src\darkloadlibrary.c @ 262] 
+0d 00000094`e8eff920 00007ff7`c305f28c     : 00000000`00000003 000001cc`27638750 00000000`00000000 00000000`00000000 : DarkLoadLibrary!wmain+0xc3 [d:\code\github\c\abu\darkloadlibrary-master\darkloadlibrary\src\main.c @ 32] 
+0e 00000094`e8effab0 00007ffb`82e154e0     : 00000000`00000000 00000000`00000000 00000000`00000000 00000000`00000000 : DarkLoadLibrary!__scrt_common_main_seh+0x10c [d:\agent\_work\3\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl @ 288] 
+0f 00000094`e8effaf0 00007ffb`84e0485b     : 00000000`00000000 00000000`00000000 00000000`00000000 00000000`00000000 : KERNEL32!BaseThreadInitThunk+0x10
+10 00000094`e8effb20 00000000`00000000     : 00000000`00000000 00000000`00000000 00000000`00000000 00000000`00000000 : ntdll!RtlUserThreadStart+0x2b
+
+
+其中  ntdll!LdrpLoadKnownDll
+LdrpMapDllWithSectionHandle  目前觉得有意思
+
+
+
