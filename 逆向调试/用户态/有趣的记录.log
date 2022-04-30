@@ -28,5 +28,22 @@ sxe ld:wow64log.dll
 其中  ntdll!LdrpLoadKnownDll
 LdrpMapDllWithSectionHandle  目前觉得有意思
 
+ntdll!LdrpLoadKnownDll+0x3a:
+00007ffb`84e4d136 488d6e48        lea     rbp,[rsi+48h]
+00007ffb`84e4d13a 4c8d7658        lea     r14,[rsi+58h]
+00007ffb`84e4d13e 4c8bc5          mov     r8,rbp
+00007ffb`84e4d141 498bd6          mov     rdx,r14
+00007ffb`84e4d144 4c8d4c2468      lea     r9,[rsp+68h]
+00007ffb`84e4d149 e8faf4ffff      call    ntdll!LdrpFindKnownDll (00007ffb`84e4c648)
+00007ffb`84e4d14e 8bf8            mov     edi,eax
+00007ffb`84e4d150 85c0            test    eax,eax
+00007ffb`84e4d152 0f8891000000    js      ntdll!LdrpLoadKnownDll+0xed (00007ffb`84e4d1e9)  Branch
+
+ntdll!LdrpLoadKnownDll+0x103:
+00007ffb`84e4d1ff 488d542430      lea     rdx,[rsp+30h]
+00007ffb`84e4d204 e8ff1d0000      call    ntdll!LdrpCheckKnownDllFullPath (00007ffb`84e4f008)
+00007ffb`84e4d209 488d4c2430      lea     rcx,[rsp+30h]
+00007ffb`84e4d20e e91bffffff      jmp     ntdll!LdrpLoadKnownDll+0x32 (00007ffb`84e4d12e)  Branch
+
 
 
