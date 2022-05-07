@@ -1,0 +1,22 @@
+
+// http://www.pnpon.com/article/detail-171.html       驱动卸载是通过服务名来触发的
+00 fffffe06`a4c996a0 fffff802`7eb0614b     nt!IopUnloadDriver+0x182
+01 fffffe06`a4c997d0 fffff802`7e47ad15     nt!NtUnloadDriver+0xb
+02 fffffe06`a4c99800 fffff802`7e46d320     nt!KiSystemServiceCopyEnd+0x25
+03 fffffe06`a4c99998 fffff802`7eac13ca     nt!KiServiceLinkage
+04 fffffe06`a4c999a0 fffff802`7eb0614b     nt!IopUnloadDriver+0xb6402
+05 fffffe06`a4c99ad0 fffff802`7e47ad15     nt!NtUnloadDriver+0xb
+06 fffffe06`a4c99b00 00007ffe`13e9f8b4     nt!KiSystemServiceCopyEnd+0x25
+07 000000fe`1ddfe838 00007ff7`cfede928     0x00007ffe`13e9f8b4
+08 000000fe`1ddfe840 00000000`00000088     0x00007ff7`cfede928
+09 000000fe`1ddfe848 00000000`00000088     0x88
+0a 000000fe`1ddfe850 000002c0`582c5450     0x88
+0b 000000fe`1ddfe858 000002c0`582c5528     0x000002c0`582c5450
+0c 000000fe`1ddfe860 00000000`00860084     0x000002c0`582c5528
+0d 000000fe`1ddfe868 000002c0`582b0640     0x860084
+0e 000000fe`1ddfe870 00000000`00000000     0x000002c0`582b0640
+
+
+
+
+PsSetLoadImageNotifyRoutine   ImageLoadCallbackRoutine

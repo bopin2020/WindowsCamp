@@ -12,3 +12,7 @@ https://vimeo.com/133002251
 James Forshaw A Link to the Past: Abusing Symbolic Links on Windows
 
 PDF: https://infocon.org/cons/SyScan/SyScan%202015%20Singapore/SyScan%202015%20Singapore%20presentations/SyScan15%20James%20Forshaw%20-%20A%20Link%20to%20the%20Past.pdf
+
+
+https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-efsr/4892c610-4595-4fba-a67f-a2d26b9b6dcd
+Encrypt File System RPC
