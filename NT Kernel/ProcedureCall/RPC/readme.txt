@@ -18,4 +18,3 @@ https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-cifs/d416ff7c-c5
 
 
 
-https://bbs.pediy.com/thread-272547.htm      QueueUserAPC 逆向
