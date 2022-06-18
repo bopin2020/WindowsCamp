@@ -16,3 +16,9 @@ PDF: https://infocon.org/cons/SyScan/SyScan%202015%20Singapore/SyScan%202015%20S
 
 https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-efsr/4892c610-4595-4fba-a67f-a2d26b9b6dcd
 Encrypt File System RPC
+
+
+
+https://twitter.com/jonasLyk/status/1535874587187191808
+DOS Devices
+通过文件名获取设备驱动对象   用来Disable EDR
