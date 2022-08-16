@@ -29,3 +29,6 @@ A quick look at several Windows RPC discovery tools:
 - impacket
 - WinRpcFunctions - 
 @Cyb3rWard0g
+
+### RPC  C/S
+https://github.com/eladshamir/RPC-Backdoor
