@@ -32,3 +32,8 @@ A quick look at several Windows RPC discovery tools:
 
 ### RPC  C/S
 https://github.com/eladshamir/RPC-Backdoor
+
+
+https://github.com/akamai/akamai-security-research/tree/main/rpc_toolkit        
+RPC scraper and parser
+
