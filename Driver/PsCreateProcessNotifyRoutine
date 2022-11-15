@@ -1,0 +1,218 @@
+#pragma once
+#include <ntddk.h>   
+#include <wdf.h>	
+
+#define DebugPrint(a) KdPrintEx((DPFLTR_IHVDRIVER_ID, DPFLTR_ERROR_LEVEL, a "\r\n"));
+
+//
+// Function Definition
+//
+VOID
+CreateProcessNotifyEx(
+    __inout PEPROCESS  Process,
+    __in HANDLE  ProcessId,
+    __in_opt PPS_CREATE_NOTIFY_INFO  CreateInfo
+);
+
+
+// ==============
+
+#include "Driver.h"
+
+DRIVER_INITIALIZE DriverEntry;
+EVT_WDF_DRIVER_DEVICE_ADD KmdfHelloWorldEvtDeviceAdd;
+
+
+
+/// <summary>
+/// 
+/// </summary>
+/// <param name="DriverObject"></param>
+VOID DriverUnload(_In_ PDRIVER_OBJECT DriverObject)
+{
+    DebugPrint("Driver unload...");
+}
+
+
+/// <summary>
+/// https://www.mdsec.co.uk/2021/06/bypassing-image-load-kernel-callbacks/
+/// Image load Event
+/// </summary>
+/// <param name="FullImageName"></param>
+/// <param name="ProcessId"></param>
+/// <param name="ImageInfo"></param>
+VOID ImageLoadCallbackRoutine(PUNICODE_STRING FullImageName,HANDLE ProcessId,PIMAGE_INFO ImageInfo)
+{
+    DbgPrint("[+] ProcessId %d Loaded image: %wZ\n", ProcessId,FullImageName);
+    return;
+}
+
+/// <summary>
+/// CreateProcessRoutine 监视
+/// </summary>
+/// <param name="ParentId"></param>
+/// <param name="ProcessId"></param>
+/// <param name="Create"></param>
+VOID CreateProcessRoutineSpy(IN HANDLE  ParentId,IN HANDLE ProcessId,IN BOOLEAN Create)
+{
+    if (Create)
+    {
+        KdPrint(("[SysTest] Process Created. ParentId:(%d) ProcessId:(%d).\n", ParentId, ProcessId));
+    }
+    else
+    {
+        KdPrint(("[SysTest] Process Terminated ProcessId:(%d).ParentId:(%d) .\n", ProcessId, ParentId));
+    }
+
+    return;
+}
+
+
+//
+// DriverEntry 
+// 1. PsSetLoadImageNotifyRoutine()   gain loadimage event
+// 
+extern NTSTATUS DriverEntry(
+    _In_ PDRIVER_OBJECT     DriverObject,
+    _In_ PUNICODE_STRING    RegistryPath
+)
+{
+    DriverObject->DriverUnload = DriverUnload;
+    // NTSTATUS variable to record success or failure
+    NTSTATUS status = STATUS_SUCCESS;
+    // Allocate the driver configuration object
+    WDF_DRIVER_CONFIG config;
+
+    KdPrintEx((DPFLTR_IHVDRIVER_ID, DPFLTR_INFO_LEVEL, "KmdfHelloWorld: DriverEntry\n"));
+    KdPrintEx((DPFLTR_IHVDRIVER_ID, DPFLTR_ERROR_LEVEL, "balabala\r\n"));
+    KdPrintEx((DPFLTR_IHVDRIVER_ID, DPFLTR_ERROR_LEVEL, "Drive dev test\r\n"));
+
+    UNREFERENCED_PARAMETER(DriverObject);
+    UNREFERENCED_PARAMETER(RegistryPath);
+    // PsSetLoadImageNotifyRoutine set Image Load Event Callback Routine
+    PsSetLoadImageNotifyRoutine(ImageLoadCallbackRoutine);
+    DebugPrint("PsSetLoadImageNotifyRoutine set ImageLoadCallbackRoutine successfully");
+
+    /*
+     https://www.cnblogs.com/priarieNew/p/9758980.html
+
+    PsSetCreateProcessNotifyRoutine only can notice and monitor process create or terminate
+    if you wanna prevent the process from creating, you could PsSetCreateProcessNotifyRoutineEx
+    */
+    PsSetCreateProcessNotifyRoutine(CreateProcessRoutineSpy,FALSE);
+    DebugPrint("PsSetCreateProcessNotifyRoutine successfully");
+
+    PsSetCreateProcessNotifyRoutineEx(CreateProcessNotifyEx,TRUE);
+    DebugPrint("PsSetCreateProcessNotifyRoutineEx prevent process creating...");
+
+    // Initialize the driver configuration object to register the
+    // entry point for the EvtDeviceAdd callback, KmdfHelloWorldEvtDeviceAdd
+    WDF_DRIVER_CONFIG_INIT(&config,
+        KmdfHelloWorldEvtDeviceAdd
+    );
+
+    // Finally, create the driver object
+    status = WdfDriverCreate(DriverObject,
+        RegistryPath,
+        WDF_NO_OBJECT_ATTRIBUTES,
+        &config,
+        WDF_NO_HANDLE
+    );
+
+
+    return status;
+}
+VOID
+CmpLoadHiveThread(
+    IN PVOID StartContext
+)
+{
+    KdPrintEx((DPFLTR_IHVDRIVER_ID, DPFLTR_INFO_LEVEL, "KmdfHelloWorld: KmdfHelloWorldEvtDeviceAdd\n"));
+
+    KdPrintEx((DPFLTR_IHVDRIVER_ID, DPFLTR_INFO_LEVEL,"%x\r\n", StartContext));
+}
+
+
+// 
+NTSTATUS KmdfHelloWorldEvtDeviceAdd(
+    _In_    WDFDRIVER       Driver,
+    _Inout_ PWDFDEVICE_INIT DeviceInit
+)
+{
+    // We're not using the driver object,
+    // so we need to mark it as unreferenced
+    UNREFERENCED_PARAMETER(Driver);
+
+    NTSTATUS status;
+
+    // Allocate the device object
+    WDFDEVICE hDevice;
+
+    // Print "Hello World"
+    KdPrintEx((DPFLTR_IHVDRIVER_ID, DPFLTR_INFO_LEVEL, "KmdfHelloWorld: KmdfHelloWorldEvtDeviceAdd\n"));
+
+    // Create the device object
+    status = WdfDeviceCreate(&DeviceInit,
+        WDF_NO_OBJECT_ATTRIBUTES,
+        &hDevice
+    );
+
+    /*
+    PsCreateSystemThread 
+    Create Zero-based system thread in order to zero one page and meanwhile we should closehandle thread in ring0 in case BSOD
+    */
+
+    /*HANDLE Thread;
+    NTSTATUS Status;
+    Status = PsCreateSystemThread(
+        &Thread,
+        THREAD_ALL_ACCESS,
+        NULL,
+        0,
+        NULL,
+        CmpLoadHiveThread,
+        (PVOID)(ULONG_PTR)(ULONG)2
+    );
+
+    if (NT_SUCCESS(Status)) {
+        ZwClose(Thread);
+    }
+    else
+    {
+
+    }*/
+
+
+    return status;
+}
+// 
+
+
+VOID CreateProcessNotifyEx(
+    __inout PEPROCESS  Process,
+    __in HANDLE  ProcessId,
+    __in_opt PPS_CREATE_NOTIFY_INFO  CreateInfo
+)
+{
+    UNREFERENCED_PARAMETER(ProcessId);
+    UNREFERENCED_PARAMETER(Process);
+
+    PWCHAR pSub = NULL;
+    // prevent process from creating
+    if (NULL == CreateInfo)
+    {
+        DbgPrint(("[systest]:process exits.\n"));
+        return;
+    }
+
+    KdPrint(("[systest]process create:(%wZ).\n", CreateInfo->ImageFileName));
+    // if process name is notepad.exe
+    pSub = wcswcs(CreateInfo->ImageFileName->Buffer, L"notepad.exe");
+    if (NULL != pSub)
+    {
+        // create access denies
+        CreateInfo->CreationStatus = STATUS_ACCESS_DENIED;
+    }
+
+    return;
+}
