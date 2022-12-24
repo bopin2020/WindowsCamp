@@ -2,6 +2,7 @@ https://github.com/googleprojectzero/symboliclink-testing-tools
 
 https://googleprojectzero.blogspot.com/2015/08/windows-10hh-symbolic-link-mitigations.html
 符号链接学习
+https://github.com/usdAG/SharpLink
 
 https://nixhacker.com/understanding-and-exploiting-symbolic-link-in-windows/
 
