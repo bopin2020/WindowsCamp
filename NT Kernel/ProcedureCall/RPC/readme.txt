@@ -41,3 +41,5 @@ RPC scraper and parser
 https://github.com/trailofbits/RpcInvestigator
 Exploring RPC interfaces on Windows
 
+https://github.com/lucasg/findrpc
+Idapython script to carve binary for internal RPC structures
