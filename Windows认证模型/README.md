@@ -5,3 +5,6 @@
 ## API Info 
 > https://github.com/BackupHouse/TBAL/  
 > origin from https://github.com/rbmm/TBAL  
+
+
+> https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/component-updates/winlogon-automatic-restart-sign-on--arso-
