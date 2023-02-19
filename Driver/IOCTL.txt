@@ -1,4 +1,4 @@
 ILControl vuln
 
-> https://www.ddosi.org/drivers-reverse-engineering
-> 
+> https://www.ddosi.org/drivers-reverse-engineering   
+> https://github.com/VoidSec/DriverBuddyReloaded        IDA 插件
