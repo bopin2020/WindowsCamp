@@ -11,3 +11,9 @@
 
 > https://github.com/shareef12/libpdb
 > 解析 pdb
+
+
+## win32
+> http://www.chrisoldwood.com/win32.htm    
+> 上古时期的一些win32工具   主要涉及DDE,COM，WMI    
+> https://github.com/chrisoldwood      
