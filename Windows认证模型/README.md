@@ -8,3 +8,8 @@
 
 
 > https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/component-updates/winlogon-automatic-restart-sign-on--arso-
+
+
+## ACM
+> Access Control  Model  访问控制模型
+> https://learn.microsoft.com/en-us/windows/win32/secauthz/access-control-model  
