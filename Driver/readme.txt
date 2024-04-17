@@ -9,3 +9,4 @@ https://bbs.pediy.com/thread-275027.htm   过写保护  任意进程 API Hook
 > https://bbs.pediy.com/thread-274952.htm   ring3 ring0 驱动开发模板
 > 
 > https://github.com/XAGU/Driver-Learning    驱动开发 examples
+> https://bbs.kanxue.com/thread-268379.htm  NT式驱动,WDM,WDF
