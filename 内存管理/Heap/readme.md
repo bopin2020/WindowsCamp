@@ -8,3 +8,4 @@
 > https://github.com/synacktiv/Windows-kernel-SegmentHeap-Aligned-Chunk-Confusion    
 
 > https://mp.weixin.qq.com/s/nKe8rGm_0yPVXXm99E15GA      Windows堆的基础内容,介绍了堆漏洞相关的利用原理,不过没有涉及到低碎片化堆等
+> https://blog.csdn.net/qq_41252520/article/details/115012992   堆利用  
