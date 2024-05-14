@@ -10,3 +10,7 @@ https://bbs.pediy.com/thread-275027.htm   过写保护  任意进程 API Hook
 > 
 > https://github.com/XAGU/Driver-Learning    驱动开发 examples
 > https://bbs.kanxue.com/thread-268379.htm  NT式驱动,WDM,WDF
+
+
+## KMDF Bug hunt
+> https://ioactive.com/wp-content/uploads/2018/09/Reverse_Engineering_and_Bug_Hunting_On_KMDF_Drivers.pdf  
