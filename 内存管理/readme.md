@@ -8,4 +8,8 @@
 
 # ExAllocatedPoolWithTag  
 > 监控内核中 Tag内存   
-> https://github.com/zodiacon/PoolMonXv3    
+> https://github.com/zodiacon/PoolMonXv3
+
+
+# Windows Segment Heap    
+> https://speakerdeck.com/scwuaptx/windows-kernel-heap-segment-heap-in-windows-kernel-part-1?slide=1    
