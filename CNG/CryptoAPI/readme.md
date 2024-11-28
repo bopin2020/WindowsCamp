@@ -7,9 +7,9 @@
 ```
 void hex_dump(void* buffer, size_t size) {
     DWORD len = 0;
-    if (CryptBinaryToStringA(&buffer, size, CRYPT_STRING_HEXASCII, NULL, &len)) {
+    if (CryptBinaryToStringA(&buffer, size, CRYPT_STRING_HEXASCIIADDR, NULL, &len)) {
         void* buffer = malloc(len);
-        if (CryptBinaryToStringA(&buffer, size, CRYPT_STRING_HEXASCII, buffer, &len)) {
+        if (CryptBinaryToStringA(&buffer, size, CRYPT_STRING_HEXASCIIADDR, buffer, &len)) {
             printf("%s\n", (BYTE*)buffer);
         }
         free(buffer);
