@@ -6,6 +6,11 @@
 
 > https://uefi.org/sites/default/files/resources/CSRT%20v2.pdf     Core System Resource Table    
 
+## cpu manual
+> https://www.intel.com/content/dam/www/public/us/en/documents/manuals/64-ia-32-architectures-software-developer-vol-1-manual.pdf
+> https://www.intel.com/content/dam/www/public/us/en/documents/manuals/64-ia-32-architectures-software-developer-vol-2b-manual.pdf
+> https://courses.cs.washington.edu/courses/cse481a/18wi/readings/sdm-3.pdf  
+
 
 ## cpu internals    
 > https://github.com/LordNoteworthy/cpu-internals        
