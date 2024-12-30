@@ -5,5 +5,6 @@
 
 ## cacheout
 > python实现的各种缓存算法,在对Windows缓存管理器，内存管理器和文件系统研究前应当仔细阅读cacheout提供的算法        
-> https://cacheout.readthedocs.io/en/latest/cache.html
+> https://cacheout.readthedocs.io/en/latest/cache.html    
 > https://stackoverflow.com/questions/5088128/why-does-cache-use-most-recently-used-mru-algorithm-as-evict-policy  
+> 还有这篇帖子 里面Landy Wang 对cache的理解很独到。  
