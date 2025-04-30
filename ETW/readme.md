@@ -4,4 +4,7 @@
 
 
 # resources
-> https://x.com/vagnerpilar/status/1315877237565071360    ETW trace knownledge  
+> https://x.com/vagnerpilar/status/1315877237565071360    ETW trace knownledge
+
+# ETW Internals
+> https://windows-internals.com/exploiting-a-simple-vulnerability-part-1-5-the-info-leak/  
