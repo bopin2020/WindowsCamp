@@ -5,6 +5,7 @@ const EVENT_DESCRIPTOR CiDynamicCodeTrustFailed
 const EVENT_DESCRIPTOR CiPolicyFailure
 const EVENT_DESCRIPTOR CiHvciFailure
 const EVENT_DESCRIPTOR WhqlEnforcementEnabled
+const EVENT_DESCRIPTOR WhqlEnforcementDisabled
 const EVENT_DESCRIPTOR CiPolicyRefreshAttempted
 const EVENT_DESCRIPTOR SmartlockerVerbose
 const EVENT_DESCRIPTOR CiPolicyRefreshFinished
