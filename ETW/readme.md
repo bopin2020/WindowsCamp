@@ -8,3 +8,13 @@
 
 # ETW Internals
 > https://windows-internals.com/exploiting-a-simple-vulnerability-part-1-5-the-info-leak/  
+
+
+## ETW Provider
+```
+https://blog.naver.com/techshare/220637628128?viewType=pc
+```
+
+```
+NtTraceControl --> (EtwEnumTraceGuidList 0x15) EtwpGetTraceGuidList  --> EtwpGetGuidList
+```
