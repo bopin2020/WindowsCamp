@@ -13,6 +13,9 @@ const EVENT_DESCRIPTOR CiSetFileCacheComplete
 const EVENT_DESCRIPTOR CiImageFileHashNotFound
 const EVENT_DESCRIPTOR CiPolicyRefreshStarted
 const EVENT_DESCRIPTOR SiPolicyFailure
+// win11 24h2 26100.6584 exists
+const EVENT_DESCRIPTOR CiSetFileCacheStart
+
 const EVENT_DESCRIPTOR CiGetFileCacheComplete
 const EVENT_DESCRIPTOR CiImageSdlRequirementNotMet
 const EVENT_DESCRIPTOR CiAllowExpiredAndRevokedCertWithUMCI
