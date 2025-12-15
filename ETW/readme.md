@@ -24,3 +24,9 @@ https://www.geoffchappell.com/studies/windows/km/ntoskrnl/api/etw/traceapi/contr
 
 NtTraceControl --> (EtwEnumTraceGuidList 0x15) EtwpGetTraceGuidList  --> EtwpGetGuidList
 ```
+
+
+## powershell
+```
+https://learn.microsoft.com/en-us/powershell/module/eventtracingmanagement/?view=windowsserver2025-ps    
+```
