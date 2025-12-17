@@ -13,3 +13,7 @@
 ## ACM
 > Access Control  Model  访问控制模型
 > https://learn.microsoft.com/en-us/windows/win32/secauthz/access-control-model  
+
+## Security
+包含安全组，SID等各种细节  
+> https://github.com/MicrosoftDocs/windowsserverdocs/blob/main/WindowsServerDocs/identity/ad-ds/manage/understand-security-groups.md  
