@@ -1,0 +1,5 @@
+filename: C:\Windows\System32\drivers\bridge.sys
+sha256: e555381c549daa86943dfdd803466e2913ff40e1ee31bed9b1c6d4d644555b52
+datetime: 2025-05-13 14:57:10.020918
+ETW Descriptor Number: 1
+const EVENT_DESCRIPTOR EventDescriptor

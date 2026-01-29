@@ -1,0 +1,5 @@
+filename: C:\Windows\System32\drivers\bthenum.sys
+sha256: f02d787d426de868545ebf4045deb1090626ecdd7c988099e9a95395f80803a8
+datetime: 2025-05-13 14:57:15.978770
+ETW Descriptor Number: 1
+const EVENT_DESCRIPTOR _PolicyServiceBlockAudit

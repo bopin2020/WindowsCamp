@@ -1,0 +1,5 @@
+filename: C:\Windows\System32\drivers\fileinfo.sys
+sha256: 56b772ac11842c2d1bb5f13bbf24f84ea51aad78dff8ccc26fb64e4b2b73f85e
+datetime: 2025-05-13 15:02:34.162923
+ETW Descriptor Number: 1
+const EVENT_DESCRIPTOR FiEvt_FileNameCreate_Info

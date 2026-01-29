@@ -1,0 +1,5 @@
+filename: C:\Windows\System32\drivers\ndis.sys
+sha256: 0034ec74d1d5abdae13313d9271631fb0f355867d8d8d91e64c66a7c29f8c85c
+datetime: 2025-05-13 15:16:26.344014
+ETW Descriptor Number: 1
+const EVENT_DESCRIPTOR SLEEPSTUDY_EVT_SCENARIO_BLOCKER_DATA

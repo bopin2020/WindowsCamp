@@ -1,0 +1,5 @@
+filename: C:\Windows\System32\drivers\mssecwfp.sys
+sha256: eb72f4014373bfc710ae553df6455bd77cf87c81abdf9600c708f77638b7c831
+datetime: 2025-05-13 15:15:27.257131
+ETW Descriptor Number: 1
+const EVENT_DESCRIPTOR Event_WfpCalloutExclusion

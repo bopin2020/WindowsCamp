@@ -1,0 +1,10 @@
+filename: C:\Windows\System32\drivers\iaLPSS2i_I2C_CNL.sys
+sha256: f105edd16e38f5c0044cc7139e4084a04b0ae3212171a1c7f6fe759f3f5f77fc
+datetime: 2025-05-13 15:07:21.422460
+ETW Descriptor Number: 6
+const EVENT_DESCRIPTOR EvtPrepareHardware_ResourceCnt_Error
+const EVENT_DESCRIPTOR EvtPowerCallback_Info
+const EVENT_DESCRIPTOR EvtInterruptDPCStatus_Info
+const EVENT_DESCRIPTOR EvtTargetInvalidPropertiesLenght_Error
+const EVENT_DESCRIPTOR EvtControllerCapability_Error
+const EVENT_DESCRIPTOR EvtControllerProcesInterrupts_Info

@@ -1,0 +1,6 @@
+filename: C:\Windows\System32\drivers\rdbss.sys
+sha256: 9553c27575e4bdd16d2623cddc44f9b550a98272e91aff9a5f44bc029701fa99
+datetime: 2025-05-13 15:23:42.230365
+ETW Descriptor Number: 2
+const EVENT_DESCRIPTOR ActivityStart
+const EVENT_DESCRIPTOR ActivityStop

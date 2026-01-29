@@ -1,0 +1,5 @@
+filename: C:\Windows\System32\drivers\pdc.sys
+sha256: 8baca595bcd2c6d242eb044686e6e9a29299d00da806bb8e4864899a3dcdc71e
+datetime: 2025-05-13 15:21:31.878529
+ETW Descriptor Number: 1
+const EVENT_DESCRIPTOR SLEEPSTUDY_EVT_SCENARIO_BLOCKER

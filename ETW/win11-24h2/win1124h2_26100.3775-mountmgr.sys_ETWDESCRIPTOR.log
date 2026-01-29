@@ -1,0 +1,5 @@
+filename: C:\Windows\System32\drivers\mountmgr.sys
+sha256: 308d58336db969ffd1d8309c7cbccc8089b0e582bfbf3d9337f1622dede1339e
+datetime: 2025-05-13 15:12:55.270154
+ETW Descriptor Number: 1
+const EVENT_DESCRIPTOR MOUNTMGR_CVE_DETECT

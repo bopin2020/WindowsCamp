@@ -1,0 +1,10 @@
+filename: C:\Windows\System32\drivers\iaLPSS2i_I2C_GLK.sys
+sha256: a92487129b81376471c842b9932ff3a7b3abbbb89797978e3fdeaf71a6fd5e3f
+datetime: 2025-05-13 15:07:25.757894
+ETW Descriptor Number: 6
+const EVENT_DESCRIPTOR EvtPrepareHardware_ResourceCnt_Error
+const EVENT_DESCRIPTOR EvtPowerCallback_Info
+const EVENT_DESCRIPTOR EvtInterruptDPCStatus_Info
+const EVENT_DESCRIPTOR EvtTargetInvalidPropertiesLenght_Error
+const EVENT_DESCRIPTOR EvtControllerCapability_Error
+const EVENT_DESCRIPTOR EvtControllerProcesInterrupts_Info

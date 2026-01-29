@@ -1,0 +1,5 @@
+filename: C:\Windows\System32\drivers\ipnat.sys
+sha256: 8ccc6c77edf4ce65d725bbde3fa0de3bbd0d5b82218e73244e74537b11e7b535
+datetime: 2025-05-13 15:09:19.540905
+ETW Descriptor Number: 1
+const EVENT_DESCRIPTOR DebugTrace

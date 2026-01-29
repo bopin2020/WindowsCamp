@@ -1,0 +1,16 @@
+filename: C:\Windows\System32\drivers\mmcss.sys
+sha256: d560005584caf6d7ec17ce15c28be527775f91c5d9dbdc1f2225287b711c8500
+datetime: 2025-05-13 15:12:29.026343
+ETW Descriptor Number: 12
+const EVENT_DESCRIPTOR CiThreadBufferingStopEvent
+const EVENT_DESCRIPTOR CiSchedulerWakeupEvent
+const EVENT_DESCRIPTOR CiSchedulerSleepEvent
+const EVENT_DESCRIPTOR CiTaskIndexYieldEvent
+const EVENT_DESCRIPTOR CiTaskIndexPreDeadlineExpiredEvent
+const EVENT_DESCRIPTOR CiTaskIndexDeadlineExpiredEvent
+const EVENT_DESCRIPTOR CiSchedulerPriorityEvent
+const EVENT_DESCRIPTOR CiSetMultimediaModeEvent
+const EVENT_DESCRIPTOR CiThreadJoinEvent
+const EVENT_DESCRIPTOR CiTurboEngagedEvent
+const EVENT_DESCRIPTOR CiThreadLeaveEvent
+const EVENT_DESCRIPTOR CiTaskIndexYieldCancelEvent

@@ -1,0 +1,8 @@
+filename: C:\Windows\System32\drivers\mpsdrv.sys
+sha256: d640f00f5e152782906d443981f7577dbaa1960058e27b7683ba029182f5a220
+datetime: 2025-05-13 15:13:03.678182
+ETW Descriptor Number: 4
+const EVENT_DESCRIPTOR MPS_DRV_Start_End
+const EVENT_DESCRIPTOR MPS_DRV_Stop_End
+const EVENT_DESCRIPTOR MPS_DRV_Stop_Begin
+const EVENT_DESCRIPTOR MPS_DRV_Start_Begin

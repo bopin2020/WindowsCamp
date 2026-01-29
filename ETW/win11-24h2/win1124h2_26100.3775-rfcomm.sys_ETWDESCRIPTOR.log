@@ -1,0 +1,5 @@
+filename: C:\Windows\System32\drivers\rfcomm.sys
+sha256: fb091d0ec45712dc276ace19fbbb8531b6bba2e9e76fbc63a0e3134f4b768b6b
+datetime: 2025-05-13 15:25:03.453313
+ETW Descriptor Number: 1
+const EVENT_DESCRIPTOR _PolicyServiceBlockAudit

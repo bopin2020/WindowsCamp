@@ -1,0 +1,5 @@
+filename: C:\Windows\System32\drivers\Dumpata.sys
+sha256: 720d11e6e592b2154321c685ad3d5af1682901ceb5c0c689176ede8203719431
+datetime: 2025-05-13 14:59:47.390336
+ETW Descriptor Number: 1
+const EVENT_DESCRIPTOR ATAPORT_EVENT_LPM_POWERSTATE_PARTIAL

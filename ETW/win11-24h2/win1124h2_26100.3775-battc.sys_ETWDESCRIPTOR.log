@@ -1,0 +1,5 @@
+filename: C:\Windows\System32\drivers\battc.sys
+sha256: 320c199d0a9b46a8aaaddf7a13e5ba16f3bffe7bdaa094de2b9a0d9e85a3894b
+datetime: 2025-05-13 14:57:02.703187
+ETW Descriptor Number: 1
+const EVENT_DESCRIPTOR BATTERY_EVT_BATTERY_BAY_RUNDOWN

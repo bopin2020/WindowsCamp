@@ -1,0 +1,6 @@
+filename: C:\Windows\System32\drivers\dxgmms1.sys
+sha256: 01e4387d8eecbc31ad92d9318f23a1f830b23a29c28f9c1cff807f5aea03aa4f
+datetime: 2025-05-13 15:00:25.383800
+ETW Descriptor Number: 2
+const EVENT_DESCRIPTOR Dxgk_HighPagingLevel
+const EVENT_DESCRIPTOR Dxgk_ExcessiveMemoryTransfer

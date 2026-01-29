@@ -1,0 +1,9 @@
+filename: C:\Windows\System32\drivers\PEAuth.sys
+sha256: 6d95273f8e72da9b09b854aeb2d157d4145917dd2f57648a2e78e18643b5296f
+datetime: 2025-05-13 15:21:38.172261
+ETW Descriptor Number: 5
+None
+None
+None
+None
+const EVENT_DESCRIPTOR EventDescriptor

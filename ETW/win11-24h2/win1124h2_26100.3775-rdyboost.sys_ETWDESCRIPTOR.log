@@ -1,0 +1,18 @@
+filename: C:\Windows\System32\drivers\rdyboost.sys
+sha256: b57a3546a72ca58afb28cccc452e328c661f263bc3f1c63d1ee11764cb3d613c
+datetime: 2025-05-13 15:24:00.723403
+ETW Descriptor Number: 14
+const EVENT_DESCRIPTOR SmdRBIOEvent
+const EVENT_DESCRIPTOR SmdRBEventPeriodicStats
+const EVENT_DESCRIPTOR SmdRBEventCacheOp
+const EVENT_DESCRIPTOR SmEventGlobalStats
+const EVENT_DESCRIPTOR SmdEventWriteEvict
+const EVENT_DESCRIPTOR SmdRBEventSyncCallBegin
+const EVENT_DESCRIPTOR SmEventSQMStreamRow
+const EVENT_DESCRIPTOR SmdEventStoreIgnoredIO
+const EVENT_DESCRIPTOR SmEventCacheTermination
+const EVENT_DESCRIPTOR SmEventStoreIoStats
+const EVENT_DESCRIPTOR SmdEventStoreReadBegin
+const EVENT_DESCRIPTOR SmdEventStoreReadEnd
+const EVENT_DESCRIPTOR SmdHbdrvEventIrpTag
+const EVENT_DESCRIPTOR SmdEventUserActive

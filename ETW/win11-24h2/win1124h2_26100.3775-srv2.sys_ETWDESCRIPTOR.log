@@ -1,0 +1,5 @@
+filename: C:\Windows\System32\drivers\srv2.sys
+sha256: dfd07ac0fc3066cf51085b933337ecafe7a5a001e0930e17c2584da4240772e2
+datetime: 2025-05-13 15:28:23.803909
+ETW Descriptor Number: 1
+const EVENT_DESCRIPTOR SMB2_EVENT_WORKITEM_ACTIVITY_TRANSFER

@@ -1,0 +1,5 @@
+filename: C:\Windows\System32\drivers\vmbus.sys
+sha256: f108496cc5c02e0de26459bcf02549113fe6e1375a305e8782a0e25ec59cefb7
+datetime: 2025-05-13 15:36:49.473805
+ETW Descriptor Number: 1
+const EVENT_DESCRIPTOR VMBUSCLASS_WRONG_VERSION_CLIENT

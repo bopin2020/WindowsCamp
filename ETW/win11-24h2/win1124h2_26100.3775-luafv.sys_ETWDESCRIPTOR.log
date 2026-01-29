@@ -1,0 +1,15 @@
+filename: C:\Windows\System32\drivers\luafv.sys
+sha256: 6f853a9d33e6b3eda29d225a93e68d3916dff1e2b3a92e81ae580445c21c067f
+datetime: 2025-05-13 15:11:15.308494
+ETW Descriptor Number: 11
+const EVENT_DESCRIPTOR LuafvQueryVirtualizationFailed
+const EVENT_DESCRIPTOR LuafvWRPAccessDeniedEvent
+const EVENT_DESCRIPTOR LuafvExclusionEvent
+const EVENT_DESCRIPTOR LuafvDeleteFileAccessDeniedEvent
+const EVENT_DESCRIPTOR LuafvReadSettingsFailed
+const EVENT_DESCRIPTOR LuafvVirtualDeleteEvent
+const EVENT_DESCRIPTOR LuafvVirtualRenameEvent
+const EVENT_DESCRIPTOR LuafvInstanceSetupFailed
+const EVENT_DESCRIPTOR LuafvVirtualCreateEvent
+const EVENT_DESCRIPTOR LuafvReadFileListFailed
+const EVENT_DESCRIPTOR LuafvDelayedOnlyEvent

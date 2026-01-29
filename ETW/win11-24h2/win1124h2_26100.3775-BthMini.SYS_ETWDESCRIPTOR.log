@@ -1,0 +1,5 @@
+filename: C:\Windows\System32\drivers\BthMini.SYS
+sha256: eda6f617290edacd8e338a663a01bc70df79f8b1dcafbac547aa7eebbf847d2f
+datetime: 2025-05-13 14:57:19.187369
+ETW Descriptor Number: 1
+const EVENT_DESCRIPTOR _E_LFDVersionNotSupported

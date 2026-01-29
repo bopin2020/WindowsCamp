@@ -1,0 +1,5 @@
+filename: C:\Windows\System32\drivers\srvnet.sys
+sha256: 2e205245cb275b7037aca004b962355224fd8f5684f1c67c5f915431100c0874
+datetime: 2025-05-13 15:28:26.557429
+ETW Descriptor Number: 1
+const EVENT_DESCRIPTOR IPV6Event

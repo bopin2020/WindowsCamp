@@ -1,0 +1,6 @@
+filename: C:\Windows\System32\drivers\SerCx.sys
+sha256: 60fa91dcab5ae2a092ba5c8ed5c8850c9f78d2b93bf3cf7413c1b9e5eca20dec
+datetime: 2025-05-13 15:26:44.573488
+ETW Descriptor Number: 2
+const EVENT_DESCRIPTOR EVENT_SERCX_IOCTL_RECEIVED
+const EVENT_DESCRIPTOR EVENT_SERCX_TXRX_EVT_IO_STOP

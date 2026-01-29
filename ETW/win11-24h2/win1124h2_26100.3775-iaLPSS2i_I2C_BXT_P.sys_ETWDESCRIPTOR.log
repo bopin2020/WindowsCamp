@@ -1,0 +1,10 @@
+filename: C:\Windows\System32\drivers\iaLPSS2i_I2C_BXT_P.sys
+sha256: bf354297a55713d9e2dd4044d42810c007733ee54d5a80d58b96dd279d92c716
+datetime: 2025-05-13 15:07:16.874847
+ETW Descriptor Number: 6
+const EVENT_DESCRIPTOR EvtPrepareHardware_ResourceCnt_Error
+const EVENT_DESCRIPTOR EvtPowerCallback_Info
+const EVENT_DESCRIPTOR EvtInterruptDPCStatus_Info
+const EVENT_DESCRIPTOR EvtTargetInvalidPropertiesLenght_Error
+const EVENT_DESCRIPTOR EvtControllerCapability_Error
+const EVENT_DESCRIPTOR EvtControllerProcesInterrupts_Info

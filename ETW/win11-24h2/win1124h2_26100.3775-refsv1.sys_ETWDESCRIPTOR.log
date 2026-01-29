@@ -1,0 +1,7 @@
+filename: C:\Windows\System32\drivers\refsv1.sys
+sha256: bca36377d993489f71886c0c7422a4e46fe51c8469459c0159d0b8045108040b
+datetime: 2025-05-13 15:24:54.404597
+ETW Descriptor Number: 3
+const EVENT_DESCRIPTOR RefsSqmSetStream
+const EVENT_DESCRIPTOR RefsSqmSetDword
+const EVENT_DESCRIPTOR RefsSqmSetStreamEx

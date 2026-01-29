@@ -1,0 +1,9 @@
+filename: C:\Windows\System32\drivers\wof.sys
+sha256: 47f23e29676c5e50446620cdc7222142baa9717a53bddbe014a8e1584a405634
+datetime: 2025-05-13 15:44:15.492350
+ETW Descriptor Number: 5
+const EVENT_DESCRIPTOR WofIntegrityBlockVerificationFailureEventId
+const EVENT_DESCRIPTOR WofIntegrityFileOpenFailureEventId
+const EVENT_DESCRIPTOR WofIntegrityFileOpenEventId
+const EVENT_DESCRIPTOR WofIntegrityFileNotReadyEventId
+const EVENT_DESCRIPTOR WofIntegrityInvalidBlockEventId

@@ -1,0 +1,12 @@
+filename: C:\Windows\System32\drivers\ahcache.sys
+sha256: 0617f6cca4a62f1dfc31a1f9b6f9e8ce7513151caed3aa1c6ea434eeb24394a9
+datetime: 2025-05-13 14:56:31.890266
+ETW Descriptor Number: 8
+const EVENT_DESCRIPTOR CompatCacheQueryStart
+const EVENT_DESCRIPTOR CompatCdbQueryStart
+const EVENT_DESCRIPTOR CompatCacheQueryProcessStart
+const EVENT_DESCRIPTOR CompatCacheUpdateStart
+const EVENT_DESCRIPTOR CompatMapQuirksStart
+const EVENT_DESCRIPTOR SdbApiMatchMessageStringW
+const EVENT_DESCRIPTOR CompatCacheInitializeStart
+const EVENT_DESCRIPTOR CompatCacheInitializeStop

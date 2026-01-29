@@ -1,0 +1,5 @@
+filename: C:\Windows\System32\drivers\hidclass.sys
+sha256: ab06997847311a6a9e23f5285432d9313839e6307ee54d9c396295cf69adfbe9
+datetime: 2025-05-13 15:04:25.777550
+ETW Descriptor Number: 1
+const EVENT_DESCRIPTOR HIDCLASS_ETW_EVENT_DEVICE_INFORMATION_V1

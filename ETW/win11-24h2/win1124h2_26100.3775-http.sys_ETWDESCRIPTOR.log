@@ -1,0 +1,5 @@
+filename: C:\Windows\System32\drivers\http.sys
+sha256: 35b8a43e2a8a05e62d470e94ad963c0ca54071cbc9d8a291e47c190dd96ea055
+datetime: 2025-05-13 15:06:06.128375
+ETW Descriptor Number: 1
+const EVENT_DESCRIPTOR HTTP_EVENT_FLUSH_RESPONSE_CACHE

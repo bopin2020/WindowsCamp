@@ -1,0 +1,7 @@
+filename: C:\Windows\System32\drivers\mqac.sys
+sha256: 62aab32f75b008e7fd284404b3d8fa1f0a6e876e37c169c2ab54a7ad9cf040da
+datetime: 2025-05-13 15:13:12.142423
+ETW Descriptor Number: 3
+const EVENT_DESCRIPTOR PUT_INTO_QUEUE
+const EVENT_DESCRIPTOR SENT_TO_QUEUE
+const EVENT_DESCRIPTOR RECEIVED_FROM_QUEUE

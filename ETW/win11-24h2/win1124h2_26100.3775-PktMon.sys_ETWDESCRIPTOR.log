@@ -1,0 +1,10 @@
+filename: C:\Windows\System32\drivers\PktMon.sys
+sha256: e6e44c01538fdfdfb20f36dfce3ac189710ad89b0839b4bd9eaf890f408ba4e4
+datetime: 2025-05-13 15:21:51.183843
+ETW Descriptor Number: 6
+const EVENT_DESCRIPTOR PktContextUint64
+const EVENT_DESCRIPTOR CompPropString
+const EVENT_DESCRIPTOR PktNblInfo
+const EVENT_DESCRIPTOR FramePayload
+const EVENT_DESCRIPTOR NblParsedDropIpv4
+const EVENT_DESCRIPTOR PktFilterIPv6

@@ -1,0 +1,5 @@
+filename: C:\Windows\System32\drivers\bthport.sys
+sha256: 6c268bdf036acc822d00b5eae2557f581cb4d041dc545bc6e2ee46e7da5dc1a6
+datetime: 2025-05-13 14:57:22.822310
+ETW Descriptor Number: 1
+const EVENT_DESCRIPTOR EVENT_TIE_ACTIVITY_ID

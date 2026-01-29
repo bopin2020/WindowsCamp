@@ -1,0 +1,5 @@
+filename: C:\Windows\System32\drivers\USBSTOR.SYS
+sha256: a0f52b0bea39590c88f06627c2d091e587647ed3cb20382df2401de8f99341f0
+datetime: 2025-05-13 15:34:47.489660
+ETW Descriptor Number: 1
+const EVENT_DESCRIPTOR EventLogoPerformanceMeasurement

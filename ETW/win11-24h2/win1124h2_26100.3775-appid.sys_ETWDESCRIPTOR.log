@@ -1,0 +1,11 @@
+filename: C:\Windows\System32\drivers\appid.sys
+sha256: 8dadb0aecd94a5fe9f4b8278cd570f271d004f7a2784c7b4204b037fa9ea472d
+datetime: 2025-05-13 14:56:46.268869
+ETW Descriptor Number: 7
+const EVENT_DESCRIPTOR AppIdRegisterUninstallerEvent
+const EVENT_DESCRIPTOR AppIdNewProcessFailed
+const EVENT_DESCRIPTOR AppIdDriverFailed
+const EVENT_DESCRIPTOR SrpNoAppxRuleConfigured
+const EVENT_DESCRIPTOR AppIdCheckCmdlineAgainstUninstallStringEvent
+const EVENT_DESCRIPTOR AppIdStartServiceEvent
+const EVENT_DESCRIPTOR AppIdSmartlockerEnforcementStatusFail

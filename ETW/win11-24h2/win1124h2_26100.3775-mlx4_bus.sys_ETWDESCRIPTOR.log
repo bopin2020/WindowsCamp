@@ -1,0 +1,10 @@
+filename: C:\Windows\System32\drivers\mlx4_bus.sys
+sha256: 211bdc6bb0720ee7221d77f205bd828ab4172ac4f454877beaf5e3d74419442c
+datetime: 2025-05-13 15:12:24.758905
+ETW Descriptor Number: 6
+const EVENT_DESCRIPTOR LoadDriver
+const EVENT_DESCRIPTOR CreateDevice
+const EVENT_DESCRIPTOR CloseDevice
+const EVENT_DESCRIPTOR _CMD_TIMEOUT
+const EVENT_DESCRIPTOR _CLOSING_CMD_FAIL
+const EVENT_DESCRIPTOR _POST_CMD_FAIL

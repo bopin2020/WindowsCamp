@@ -1,0 +1,5 @@
+filename: C:\Windows\System32\drivers\pciidex.sys
+sha256: 0476e562f1324a5b0ebfb9498619b735be5bd0daf892facbcc2ac8f5079a1ddb
+datetime: 2025-05-13 15:21:09.178426
+ETW Descriptor Number: 1
+const EVENT_DESCRIPTOR ATAPORT_EVENT_LPM_POWERSTATE_PARTIAL

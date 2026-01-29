@@ -1,0 +1,5 @@
+filename: C:\Windows\System32\drivers\UcmUcsiCx.sys
+sha256: 8df773b40b92f49a4d62fe1c16fa559b51cd7b18f58f708925ae69ba3f8c7c5f
+datetime: 2025-05-13 15:31:57.669975
+ETW Descriptor Number: 1
+const EVENT_DESCRIPTOR UCMUCSICX_FAILURE

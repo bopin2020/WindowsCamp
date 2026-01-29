@@ -1,0 +1,5 @@
+filename: C:\Windows\System32\drivers\BTHUSB.SYS
+sha256: 2f992926aa14cd3ce0f5a6eaa135fe9e2b1a357aff4204e3e768041a43d681b5
+datetime: 2025-05-13 14:57:30.979439
+ETW Descriptor Number: 1
+const EVENT_DESCRIPTOR BTHUSB_ETW_EVENT_HC_INFORMATION
